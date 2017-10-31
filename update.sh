@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
 
 # stop all dokku apps
-for app in `dokku apps:list`; do
-  dokku ps:stop $app
-done
+dokku --quiet apps:list | xargs -L1 dokku ps:stop
 
 # update all packages
 sudo apt-get update -y
