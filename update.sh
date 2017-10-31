@@ -14,6 +14,3 @@ sudo apt-get clean
 
 # update plugins
 curl -sk https://raw.githubusercontent.com/iamso/dokku-setup/master/plugins-update.sh | sudo bash
-
-# rebuild all apps
-dokku ps:rebuildall
