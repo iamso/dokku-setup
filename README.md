@@ -15,7 +15,7 @@ curl -sk https://ssh.keychain.pw/your@email.tld/upload | bash
 Run this as root (set `SSH_KEY` to your email and `DOKKU_TAG` to the desired version):
 
 ```bash
-SSH_KEY=your@email.tld DOKKU_TAG=v0.9.4 bash <(curl -sk https://raw.githubusercontent.com/iamso/dokku-setup/master/install.sh)
+SSH_KEY=your@email.tld DOKKU_TAG=v0.12.5 bash <(curl -sk https://raw.githubusercontent.com/iamso/dokku-setup/master/install.sh)
 ```
 **This script also installs the plugins!**
 

@@ -3,7 +3,7 @@
 set -eo pipefail
 
 # get or set dokku version to install
-export DOKKU_TAG=${DOKKU_TAG:-"v0.11.3"}
+export DOKKU_TAG=${DOKKU_TAG:-"v0.12.5"}
 
 # get and run the dokku bootstrap script
 wget https://raw.githubusercontent.com/dokku/dokku/$DOKKU_TAG/bootstrap.sh
