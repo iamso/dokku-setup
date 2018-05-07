@@ -9,7 +9,7 @@ Upload your public SSH key to https://ssh.keychain.pw using the following comman
 curl -sk https://ssh.keychain.pw/your@email.tld/upload | bash
 ```
 
-*For instructions on how to use ssh.keychain.pw visit https://ssh.keychain.pw/your@email.tld/help* 
+*For instructions on how to use ssh.keychain.pw visit https://ssh.keychain.pw/your@email.tld/help*
 
 ### Install
 Run this as root (set `SSH_KEY` to your email and `DOKKU_TAG` to the desired version):
@@ -27,6 +27,10 @@ bash <(curl -sk https://raw.githubusercontent.com/iamso/dokku-setup/master/updat
 ```
 **This script also updates the plugins!**
 
+#### After Update
+
+The update script does not restart the apps to allow you to reboot.
+So after reboot just run `dokku ps:rebuildall`, to rebuild/restart all the apps.
 
 ### Plugins
 Install some plugins:
