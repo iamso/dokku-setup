@@ -28,3 +28,7 @@ dokku plugin:update app-predeploy-tasks
 dokku plugin:update clone
 dokku plugin:update nginx-cache
 dokku plugin:update robots.txt
+dokku plugin:update fake_sns
+dokku plugin:update chrome
+dokku plugin:update dockerfile
+dokku plugin:update monit
